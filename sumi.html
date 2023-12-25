@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      #box {
+        height: 495px;
+        width: 700px;
+        background: rgba(70, 78, 17, 0.867);
+        font-size: 0;
+      }
+
+      #child1,
+      #child2,
+      #child3 {
+        font-size: 1rem;
+        vertical-align: top;
+      }
+
+      #child1 {
+        height: 250px;
+        width: 350px;
+        display: inline-block;
+        background-color: rgb(88, 186, 126);
+        position: relative;
+        margin-right: 10px;
+      }
+
+      #circle {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        padding: 20px;
+        margin: 50px 10px 10px 290px;
+
+        background-color: rgb(177, 241, 87);
+      }
+
+      #child2 {
+        height: 245px;
+        width: 350px;
+        display: inline-block;
+        background: linear-gradient(
+          to right,
+          rgb(59, 59, 209),
+          rgb(51, 137, 84)
+        );
+      }
+
+      #child3 {
+        height: 150px;
+        width: 150px;
+        display: inline-block;
+        background-color: rgb(105, 128, 211);
+        margin: 20px 20px 50px 100px;
+        background-image: url("https://i.natgeofe.com/n/548467d8-c5f1-4551-9f58-6817a8d2c45e/NationalGeographic_2572187_square.jpg");
+        background-size: cover;
+      }
+    </style>
+    <title>Box with Child Elements</title>
+  </head>
+  <body>
+    <div id="box">
+      <div id="child1">
+        <div id="circle"></div>
+      </div>
+      <div id="child2"></div>
+      <div id="child3"></div>
+    </div>
+  </body>
+</html>
